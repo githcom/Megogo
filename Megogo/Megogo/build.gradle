@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+}
+
+group 'com.megogo'
+version '1.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_16
+    targetCompatibility = JavaVersion.VERSION_16
+}
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    restAssuredVersion = '5.5.0'
+    junitPlatformVersion = '1.11.3'
+    junitJupiterVersion = '5.11.3'
+    lombokVersion = '1.18.36'
+    jacksonVersion = '2.18.1'
+}
+
+dependencies {
+    implementation "io.rest-assured:rest-assured:$restAssuredVersion"
+    implementation "io.rest-assured:json-path:$restAssuredVersion"
+    implementation "io.rest-assured:xml-path:$restAssuredVersion"
+    implementation 'org.assertj:assertj-core:3.24.2'
+    implementation "org.junit.platform:junit-platform-commons:$junitPlatformVersion"
+    implementation "org.junit.platform:junit-platform-suite:$junitPlatformVersion"
+    implementation "org.junit.platform:junit-platform-suite-api:$junitPlatformVersion"
+    implementation "org.junit.platform:junit-platform-runner:$junitPlatformVersion"
+    implementation "org.junit.jupiter:junit-jupiter:$junitJupiterVersion"
+    implementation "org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion"
+    implementation "org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion"
+    implementation "org.junit.jupiter:junit-jupiter-params:$junitJupiterVersion"
+    implementation "org.junit.vintage:junit-vintage-engine:$junitJupiterVersion"
+    implementation "org.projectlombok:lombok:$lombokVersion"
+    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+    implementation "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
+    implementation "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion"
+    implementation "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
+    implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jacksonVersion"
+    implementation 'org.aeonbits.owner:owner-java8:1.0.12'
+}
+
+test {
+    useJUnitPlatform()
+}

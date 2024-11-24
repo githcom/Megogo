@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DomainsTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-11-24T22:34:12" hostname="Andrews-MacBook-Pro.local" time="1.548">
+  <properties/>
+  <testcase name="[1] 0" classname="DomainsTests" time="1.169"/>
+  <testcase name="[2] 1" classname="DomainsTests" time="0.101"/>
+  <testcase name="[3] 2" classname="DomainsTests" time="0.177"/>
+  <testcase name="[4] 3" classname="DomainsTests" time="0.097"/>
+  <system-out><![CDATA[Request method:	GET
+Request URI:	http://ip-api.com/json/0.ua.pool.ntp.org
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	domainNumber=0
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://ip-api.com/json/1.ua.pool.ntp.org
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	domainNumber=1
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://ip-api.com/json/2.ua.pool.ntp.org
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	domainNumber=2
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://ip-api.com/json/3.ua.pool.ntp.org
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	domainNumber=3
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
